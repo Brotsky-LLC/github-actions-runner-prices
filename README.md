@@ -8,8 +8,8 @@ main third-party runner providers, as one JSON file. Every price carries the
 URL it was read from and the date it was last checked.
 
 Maintained by [Brotsky, LLC](https://github.com/Brotsky-LLC) for
-[PRLane.com](https://prlane.com). Prices are refreshed
-weekly by an automated check that opens a pull request when anything changes.
+[PRLane.com](https://prlane.com). Prices are checked
+daily by an automated check that opens a pull request when anything changes.
 
 ## Providers
 
@@ -18,7 +18,7 @@ weekly by an automated check that opens a pull request when anything changes.
 | Provider | x64 | arm64 | Runners listed |
 |---|---|---|---|
 | [GitHub-hosted runners](https://docs.github.com/en/billing/reference/actions-runner-pricing) | $0.006 | $0.005 | 35 |
-| [Blacksmith](https://www.blacksmith.sh/pricing) | $0.004 | $0.0025 | 12 |
+| [Blacksmith](https://www.blacksmith.sh/pricing) | $0.004 | $0.0025 | 17 |
 | [Depot](https://depot.dev/pricing) | $0.006 | $0.006 | 20 |
 | [Namespace](https://namespace.so/pricing) | $0.003 | — | 16 |
 | [BuildJet](https://buildjet.com/for-github-actions/pricing) | $0.004 | $0.004 | 10 |
@@ -84,7 +84,7 @@ storage add-ons. Each provider's `billing` block describes those in words.
 Prices change. If you spot one that is out of date, open a pull request that
 edits `prices.json`, updates `lastChecked` and `sourceUrl`, and passes
 `npm test`. New providers are welcome. See [REFRESH.md](REFRESH.md) for how
-the weekly check works.
+the daily audit works.
 
 ## Releases
 

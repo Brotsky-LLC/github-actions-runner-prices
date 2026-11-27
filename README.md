@@ -21,10 +21,13 @@ daily by an automated check that opens a pull request when anything changes.
 | [Blacksmith](https://www.blacksmith.sh/pricing) | $0.004 | $0.0025 | 17 |
 | [Depot](https://depot.dev/pricing) | $0.006 | $0.006 | 20 |
 | [Namespace](https://namespace.so/pricing) | $0.003 | — | 16 |
-| [BuildJet](https://buildjet.com/for-github-actions/pricing) | $0.004 | $0.004 | 10 |
 | [Ubicloud](https://ubicloud.com/docs/about/pricing) | $0.00125 | $0.00125 | 15 |
 | [RunsOn](https://runs-on.com/pricing/) | $0.0007 | — | 9 |
 | [WarpBuild](https://www.warpbuild.com/pricing) | $0.004 | $0.003 | 17 |
+
+BuildJet stopped offering GitHub Actions runners on [March 31, 2026](https://buildjet.com/for-github-actions/blog/we-are-shutting-down).
+Its ten rates are retained for historical lookups. Exclude providers with
+`retiredOn` when selecting a currently offered runner.
 
 RunsOn runs in your own AWS account, so its prices are published spot
 examples plus a yearly license. Namespace lists overage rates in

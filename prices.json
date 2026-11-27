@@ -1102,7 +1102,8 @@
       "website": "https://buildjet.com/for-github-actions",
       "pricingUrl": "https://buildjet.com/for-github-actions/pricing",
       "billing": {
-        "freeTier": "One-time $5 credit per account."
+        "freeTier": "One-time $5 credit per account.",
+        "notes": "Service stopped running jobs and billing on March 31, 2026. Listed rates are historical and must not be used for current jobs."
       },
       "runners": [
         {
@@ -1235,7 +1236,9 @@
           ],
           "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
         }
-      ]
+      ],
+      "retiredOn": "2026-03-31",
+      "retirementSourceUrl": "https://buildjet.com/for-github-actions/blog/we-are-shutting-down"
     },
     {
       "id": "ubicloud",

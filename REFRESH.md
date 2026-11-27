@@ -13,6 +13,8 @@ for verified rate, catalog, or source changes. People can follow the same steps 
    unit minutes) and the existing entries already use it.
 4. Add runners the provider newly publishes, and remove ones it no longer
    sells. Keep ids stable for runners that still exist.
+   When a provider shuts down, preserve historical rates and record verified
+   `retiredOn` and `retirementSourceUrl` rather than treating its old pricing as live.
 5. If a page cannot be read, leave that provider's entries and dates as they
    are and say so in the pull request.
 6. Set the top-level `lastUpdated` to the newest `lastChecked`.

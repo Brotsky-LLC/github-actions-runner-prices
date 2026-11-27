@@ -40,7 +40,8 @@
           "labels": [
             "ubuntu-latest",
             "ubuntu-24.04",
-            "ubuntu-22.04"
+            "ubuntu-22.04",
+            "ubuntu-26.04"
           ]
         },
         {
@@ -54,7 +55,8 @@
           "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
           "labels": [
             "ubuntu-24.04-arm",
-            "ubuntu-22.04-arm"
+            "ubuntu-22.04-arm",
+            "ubuntu-26.04-arm"
           ]
         },
         {
@@ -69,7 +71,8 @@
           "labels": [
             "windows-latest",
             "windows-2025",
-            "windows-2022"
+            "windows-2022",
+            "windows-2025-vs2026"
           ]
         },
         {
@@ -82,7 +85,8 @@
           "usdPerMinute": 0.01,
           "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
           "labels": [
-            "windows-11-arm"
+            "windows-11-arm",
+            "windows-11-vs2026-arm"
           ]
         },
         {
@@ -98,7 +102,9 @@
             "macos-latest",
             "macos-15",
             "macos-14",
-            "macos-13"
+            "macos-13",
+            "macos-26",
+            "xcode-27"
           ],
           "notes": "3-core M1 or 4-core Intel (macos-13)."
         },

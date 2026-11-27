@@ -1,7 +1,7 @@
 {
   "name": "@brotskyllc/github-actions-runner-prices",
   "version": "0.1.0",
-  "description": "Current per-minute prices for GitHub Actions runners from GitHub, Blacksmith, Depot, Namespace, BuildJet, Ubicloud, RunsOn, WarpBuild and more, each with a source URL and last-checked date.",
+  "description": "Current per-minute prices for GitHub Actions runners from GitHub, Blacksmith, Depot, Namespace, BuildJet, Ubicloud, RunsOn, WarpBuild and more, each with a source URL and last-checked date. Built for PRLane.com.",
   "license": "MIT",
   "author": "Brotsky, LLC",
   "homepage": "https://github.com/Brotsky-LLC/github-actions-runner-prices#readme",
@@ -22,7 +22,8 @@
     "buildjet",
     "ubicloud",
     "runs-on",
-    "warpbuild"
+    "warpbuild",
+    "prlane"
   ],
   "type": "module",
   "main": "./dist/index.cjs",

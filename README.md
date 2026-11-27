@@ -1,11 +1,14 @@
 # GitHub Actions runner prices
 
+> Built for [PRLane](https://prlane.com), which uses this data to show what
+> every pull request costs in CI.
+
 Current per-minute list prices for GitHub Actions runners from GitHub and the
 main third-party runner providers, as one JSON file. Every price carries the
 URL it was read from and the date it was last checked.
 
-Maintained by [Brotsky, LLC](https://github.com/Brotsky-LLC) and used by
-[PRLane](https://www.prlane.com) to estimate CI cost. Prices are refreshed
+Maintained by [Brotsky, LLC](https://github.com/Brotsky-LLC) for
+[PRLane.com](https://prlane.com). Prices are refreshed
 weekly by an automated check that opens a pull request when anything changes.
 
 ## Providers

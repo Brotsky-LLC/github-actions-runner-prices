@@ -431,7 +431,7 @@
             "blacksmith-2vcpu-ubuntu-2404",
             "blacksmith-2vcpu-ubuntu-2204"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -444,7 +444,7 @@
             "blacksmith-4vcpu-ubuntu-2404",
             "blacksmith-4vcpu-ubuntu-2204"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -457,7 +457,7 @@
             "blacksmith-8vcpu-ubuntu-2404",
             "blacksmith-8vcpu-ubuntu-2204"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -470,7 +470,7 @@
             "blacksmith-16vcpu-ubuntu-2404",
             "blacksmith-16vcpu-ubuntu-2204"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -483,7 +483,7 @@
             "blacksmith-32vcpu-ubuntu-2404",
             "blacksmith-32vcpu-ubuntu-2204"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -496,7 +496,7 @@
             "blacksmith-2vcpu-ubuntu-2404-arm",
             "blacksmith-2vcpu-ubuntu-2204-arm"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -509,7 +509,7 @@
             "blacksmith-4vcpu-ubuntu-2404-arm",
             "blacksmith-4vcpu-ubuntu-2204-arm"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -522,7 +522,7 @@
             "blacksmith-8vcpu-ubuntu-2404-arm",
             "blacksmith-8vcpu-ubuntu-2204-arm"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -535,7 +535,7 @@
             "blacksmith-16vcpu-ubuntu-2404-arm",
             "blacksmith-16vcpu-ubuntu-2204-arm"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -548,7 +548,7 @@
             "blacksmith-32vcpu-ubuntu-2404-arm",
             "blacksmith-32vcpu-ubuntu-2204-arm"
           ],
-          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         },
         {
           "lastChecked": "2026-11-27",
@@ -561,6 +561,42 @@
         },
         {
           "lastChecked": "2026-11-27",
+          "id": "windows-x64-4vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 4,
+          "usdPerMinute": 0.016,
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-8vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 8,
+          "usdPerMinute": 0.032,
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-16vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 16,
+          "usdPerMinute": 0.064,
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-32vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 32,
+          "usdPerMinute": 0.128,
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
           "id": "macos-arm64-6vcpu",
           "os": "macos",
           "arch": "arm64",
@@ -568,6 +604,15 @@
           "usdPerMinute": 0.08,
           "sourceUrl": "https://www.blacksmith.sh/pricing",
           "notes": "M4."
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-12vcpu",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 12,
+          "usdPerMinute": 0.16,
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
         }
       ]
     },
@@ -1057,7 +1102,8 @@
       "website": "https://buildjet.com/for-github-actions",
       "pricingUrl": "https://buildjet.com/for-github-actions/pricing",
       "billing": {
-        "freeTier": "One-time $5 credit per account."
+        "freeTier": "One-time $5 credit per account.",
+        "notes": "Service stopped running jobs and billing on March 31, 2026. Listed rates are historical and must not be used for current jobs."
       },
       "runners": [
         {
@@ -1190,7 +1236,9 @@
           ],
           "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
         }
-      ]
+      ],
+      "retiredOn": "2026-03-31",
+      "retirementSourceUrl": "https://buildjet.com/for-github-actions/blog/we-are-shutting-down"
     },
     {
       "id": "ubicloud",

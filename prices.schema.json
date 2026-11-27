@@ -19,11 +19,14 @@
     "provider": {
       "type": "object",
       "required": ["id", "name", "website", "pricingUrl", "runners"],
+      "dependentRequired": { "retiredOn": ["retirementSourceUrl"], "retirementSourceUrl": ["retiredOn"] },
       "properties": {
         "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
         "name": { "type": "string" },
         "website": { "$ref": "#/$defs/url" },
         "pricingUrl": { "$ref": "#/$defs/url" },
+        "retiredOn": { "type": "string", "format": "date" },
+        "retirementSourceUrl": { "$ref": "#/$defs/url" },
         "billing": {
           "type": "object",
           "properties": {

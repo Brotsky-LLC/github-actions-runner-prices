@@ -34,6 +34,9 @@ export interface Provider {
   name: string;
   website: string;
   pricingUrl: string;
+  /** Service retirement date; these records are retained for historical estimates only. */
+  retiredOn?: string;
+  retirementSourceUrl?: string;
   billing?: {
     model?: string;
     rounding?: string;

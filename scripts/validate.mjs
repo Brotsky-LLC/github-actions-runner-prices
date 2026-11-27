@@ -14,7 +14,7 @@ const RUNNER_KEYS = new Set([
   "id", "sku", "labels", "os", "arch", "vcpu", "memoryGb", "gpu", "tier", "usdPerMinute",
   "usdPerMinutePrepaid", "estimate", "instanceType", "notes", "sourceUrl", "lastChecked",
 ]);
-const PROVIDER_KEYS = new Set(["id", "name", "website", "pricingUrl", "billing", "runners"]);
+const PROVIDER_KEYS = new Set(["id", "name", "website", "pricingUrl", "retiredOn", "retirementSourceUrl", "billing", "runners"]);
 
 if (data.schemaVersion !== 1) fail("root", "schemaVersion must be 1");
 if (data.currency !== "USD") fail("root", "currency must be USD");
@@ -33,6 +33,10 @@ for (const provider of data.providers || []) {
   if (!provider.name) fail(p, "name is required");
   if (!isUrl(provider.website)) fail(p, "website must be an https URL");
   if (!isUrl(provider.pricingUrl)) fail(p, "pricingUrl must be an https URL");
+  if (provider.retiredOn !== undefined || provider.retirementSourceUrl !== undefined) {
+    if (!isDate(provider.retiredOn) || provider.retiredOn > today) fail(p, "retiredOn must be a verified date not in the future");
+    if (!isUrl(provider.retirementSourceUrl)) fail(p, "retirementSourceUrl must be an https URL");
+  }
   if (!Array.isArray(provider.runners) || provider.runners.length === 0) fail(p, "runners must be non-empty");
   const runnerIds = new Set();
   const labels = new Set();

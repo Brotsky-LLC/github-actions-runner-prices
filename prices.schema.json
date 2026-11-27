@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Brotsky-LLC/github-actions-runner-prices/main/prices.schema.json",
+  "title": "GitHub Actions runner prices",
+  "type": "object",
+  "required": ["schemaVersion", "currency", "unit", "lastUpdated", "providers"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "currency": { "const": "USD" },
+    "unit": { "const": "minute" },
+    "lastUpdated": { "$ref": "#/$defs/date" },
+    "providers": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provider" } }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "url": { "type": "string", "pattern": "^https://" },
+    "provider": {
+      "type": "object",
+      "required": ["id", "name", "website", "pricingUrl", "runners"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "name": { "type": "string" },
+        "website": { "$ref": "#/$defs/url" },
+        "pricingUrl": { "$ref": "#/$defs/url" },
+        "billing": {
+          "type": "object",
+          "properties": {
+            "model": { "type": "string" },
+            "rounding": { "type": "string" },
+            "freeTier": { "type": "string" },
+            "notes": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "runners": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/runner" } }
+      },
+      "additionalProperties": false
+    },
+    "runner": {
+      "type": "object",
+      "required": ["id", "os", "arch", "usdPerMinute", "sourceUrl", "lastChecked"],
+      "properties": {
+        "id": { "type": "string" },
+        "sku": { "type": "string" },
+        "labels": { "type": "array", "items": { "type": "string" } },
+        "os": { "enum": ["linux", "windows", "macos"] },
+        "arch": { "enum": ["x64", "arm64"] },
+        "vcpu": { "type": "number", "exclusiveMinimum": 0 },
+        "memoryGb": { "type": "number", "exclusiveMinimum": 0 },
+        "gpu": { "type": "boolean" },
+        "tier": { "type": "string" },
+        "usdPerMinute": { "type": "number", "exclusiveMinimum": 0 },
+        "usdPerMinutePrepaid": { "type": "number", "exclusiveMinimum": 0 },
+        "estimate": { "type": "boolean" },
+        "instanceType": { "type": "string" },
+        "notes": { "type": "string" },
+        "sourceUrl": { "$ref": "#/$defs/url" },
+        "lastChecked": { "$ref": "#/$defs/date" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

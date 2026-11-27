@@ -1,0 +1,63 @@
+{
+  "name": "@brotskyllc/github-actions-runner-prices",
+  "version": "0.1.0",
+  "description": "Current per-minute prices for GitHub Actions runners from GitHub, Blacksmith, Depot, Namespace, BuildJet, Ubicloud, RunsOn, WarpBuild and more, each with a source URL and last-checked date.",
+  "license": "MIT",
+  "author": "Brotsky, LLC",
+  "homepage": "https://github.com/Brotsky-LLC/github-actions-runner-prices#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brotsky-LLC/github-actions-runner-prices.git"
+  },
+  "bugs": "https://github.com/Brotsky-LLC/github-actions-runner-prices/issues",
+  "keywords": [
+    "github-actions",
+    "ci",
+    "runners",
+    "pricing",
+    "ci-cost",
+    "blacksmith",
+    "depot",
+    "namespace",
+    "buildjet",
+    "ubicloud",
+    "runs-on",
+    "warpbuild"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./prices.json": "./prices.json",
+    "./prices.schema.json": "./prices.schema.json"
+  },
+  "files": [
+    "dist",
+    "prices.json",
+    "prices.schema.json"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/validate.mjs && node scripts/build.mjs && node scripts/test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

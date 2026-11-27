@@ -1,0 +1,1687 @@
+{
+  "$schema": "./prices.schema.json",
+  "schemaVersion": 1,
+  "currency": "USD",
+  "unit": "minute",
+  "lastUpdated": "2026-11-27",
+  "providers": [
+    {
+      "id": "github",
+      "name": "GitHub-hosted runners",
+      "website": "https://github.com/features/actions",
+      "pricingUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+      "billing": {
+        "rounding": "Each job rounds up to the next whole minute.",
+        "notes": "Rates are for private repositories after included minutes. Standard runners are free on public repositories; larger runners are not. Rates in effect since January 1, 2026."
+      },
+      "runners": [
+        {
+          "lastChecked": "2026-11-27",
+          "id": "actions_linux_slim",
+          "sku": "actions_linux_slim",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 1,
+          "usdPerMinute": 0.002,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "labels": [
+            "ubuntu-slim"
+          ]
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "actions_linux",
+          "sku": "actions_linux",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "usdPerMinute": 0.006,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "labels": [
+            "ubuntu-latest",
+            "ubuntu-24.04",
+            "ubuntu-22.04"
+          ]
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "actions_linux_arm",
+          "sku": "actions_linux_arm",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 2,
+          "usdPerMinute": 0.005,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "labels": [
+            "ubuntu-24.04-arm",
+            "ubuntu-22.04-arm"
+          ]
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "actions_windows",
+          "sku": "actions_windows",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 2,
+          "usdPerMinute": 0.01,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "labels": [
+            "windows-latest",
+            "windows-2025",
+            "windows-2022"
+          ]
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "actions_windows_arm",
+          "sku": "actions_windows_arm",
+          "os": "windows",
+          "arch": "arm64",
+          "vcpu": 2,
+          "usdPerMinute": 0.01,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "labels": [
+            "windows-11-arm"
+          ]
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "actions_macos",
+          "sku": "actions_macos",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 3,
+          "usdPerMinute": 0.062,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "labels": [
+            "macos-latest",
+            "macos-15",
+            "macos-14",
+            "macos-13"
+          ],
+          "notes": "3-core M1 or 4-core Intel (macos-13)."
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_2_core_advanced",
+          "sku": "linux_2_core_advanced",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "usdPerMinute": 0.006,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_4_core",
+          "sku": "linux_4_core",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "usdPerMinute": 0.012,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_8_core",
+          "sku": "linux_8_core",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 8,
+          "usdPerMinute": 0.022,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_16_core",
+          "sku": "linux_16_core",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 16,
+          "usdPerMinute": 0.042,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_32_core",
+          "sku": "linux_32_core",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 32,
+          "usdPerMinute": 0.082,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_64_core",
+          "sku": "linux_64_core",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 64,
+          "usdPerMinute": 0.162,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_96_core",
+          "sku": "linux_96_core",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 96,
+          "usdPerMinute": 0.252,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_2_core_arm",
+          "sku": "linux_2_core_arm",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 2,
+          "usdPerMinute": 0.005,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_4_core_arm",
+          "sku": "linux_4_core_arm",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 4,
+          "usdPerMinute": 0.008,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_8_core_arm",
+          "sku": "linux_8_core_arm",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 8,
+          "usdPerMinute": 0.014,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_16_core_arm",
+          "sku": "linux_16_core_arm",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 16,
+          "usdPerMinute": 0.026,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_32_core_arm",
+          "sku": "linux_32_core_arm",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 32,
+          "usdPerMinute": 0.05,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_64_core_arm",
+          "sku": "linux_64_core_arm",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 64,
+          "usdPerMinute": 0.098,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_4_core",
+          "sku": "windows_4_core",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 4,
+          "usdPerMinute": 0.022,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_8_core",
+          "sku": "windows_8_core",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 8,
+          "usdPerMinute": 0.042,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_16_core",
+          "sku": "windows_16_core",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 16,
+          "usdPerMinute": 0.082,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_32_core",
+          "sku": "windows_32_core",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 32,
+          "usdPerMinute": 0.162,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_64_core",
+          "sku": "windows_64_core",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 64,
+          "usdPerMinute": 0.322,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_96_core",
+          "sku": "windows_96_core",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 96,
+          "usdPerMinute": 0.552,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_2_core_arm",
+          "sku": "windows_2_core_arm",
+          "os": "windows",
+          "arch": "arm64",
+          "vcpu": 2,
+          "usdPerMinute": 0.008,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_4_core_arm",
+          "sku": "windows_4_core_arm",
+          "os": "windows",
+          "arch": "arm64",
+          "vcpu": 4,
+          "usdPerMinute": 0.014,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_8_core_arm",
+          "sku": "windows_8_core_arm",
+          "os": "windows",
+          "arch": "arm64",
+          "vcpu": 8,
+          "usdPerMinute": 0.026,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_16_core_arm",
+          "sku": "windows_16_core_arm",
+          "os": "windows",
+          "arch": "arm64",
+          "vcpu": 16,
+          "usdPerMinute": 0.05,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_32_core_arm",
+          "sku": "windows_32_core_arm",
+          "os": "windows",
+          "arch": "arm64",
+          "vcpu": 32,
+          "usdPerMinute": 0.098,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_64_core_arm",
+          "sku": "windows_64_core_arm",
+          "os": "windows",
+          "arch": "arm64",
+          "vcpu": 64,
+          "usdPerMinute": 0.194,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos_l",
+          "sku": "macos_l",
+          "os": "macos",
+          "arch": "x64",
+          "vcpu": 12,
+          "usdPerMinute": 0.077,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "labels": [
+            "macos-latest-large",
+            "macos-15-large",
+            "macos-14-large",
+            "macos-13-large"
+          ]
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos_xl",
+          "sku": "macos_xl",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 5,
+          "usdPerMinute": 0.102,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "labels": [
+            "macos-latest-xlarge",
+            "macos-15-xlarge",
+            "macos-14-xlarge",
+            "macos-13-xlarge"
+          ],
+          "notes": "5-core M2 Pro."
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux_4_core_gpu",
+          "sku": "linux_4_core_gpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "usdPerMinute": 0.052,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "gpu": true
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows_4_core_gpu",
+          "sku": "windows_4_core_gpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 4,
+          "usdPerMinute": 0.102,
+          "sourceUrl": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+          "gpu": true
+        }
+      ]
+    },
+    {
+      "id": "blacksmith",
+      "name": "Blacksmith",
+      "website": "https://www.blacksmith.sh",
+      "pricingUrl": "https://www.blacksmith.sh/pricing",
+      "billing": {
+        "rounding": "Per minute, rounded to the nearest minute.",
+        "freeTier": "3,000 x64 2-vCPU minutes per month per organization.",
+        "notes": "Larger Linux and Windows runners scale linearly with vCPU from the 2-vCPU rate."
+      },
+      "runners": [
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-2vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "usdPerMinute": 0.004,
+          "labels": [
+            "blacksmith-2vcpu-ubuntu-2404",
+            "blacksmith-2vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-4vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "usdPerMinute": 0.008,
+          "labels": [
+            "blacksmith-4vcpu-ubuntu-2404",
+            "blacksmith-4vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-8vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 8,
+          "usdPerMinute": 0.016,
+          "labels": [
+            "blacksmith-8vcpu-ubuntu-2404",
+            "blacksmith-8vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-16vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 16,
+          "usdPerMinute": 0.032,
+          "labels": [
+            "blacksmith-16vcpu-ubuntu-2404",
+            "blacksmith-16vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-32vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 32,
+          "usdPerMinute": 0.064,
+          "labels": [
+            "blacksmith-32vcpu-ubuntu-2404",
+            "blacksmith-32vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-2vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 2,
+          "usdPerMinute": 0.0025,
+          "labels": [
+            "blacksmith-2vcpu-ubuntu-2404-arm",
+            "blacksmith-2vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-4vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 4,
+          "usdPerMinute": 0.005,
+          "labels": [
+            "blacksmith-4vcpu-ubuntu-2404-arm",
+            "blacksmith-4vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-8vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 8,
+          "usdPerMinute": 0.01,
+          "labels": [
+            "blacksmith-8vcpu-ubuntu-2404-arm",
+            "blacksmith-8vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-16vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 16,
+          "usdPerMinute": 0.02,
+          "labels": [
+            "blacksmith-16vcpu-ubuntu-2404-arm",
+            "blacksmith-16vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-32vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 32,
+          "usdPerMinute": 0.04,
+          "labels": [
+            "blacksmith-32vcpu-ubuntu-2404-arm",
+            "blacksmith-32vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://docs.blacksmith.sh/blacksmith-runners/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-2vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 2,
+          "usdPerMinute": 0.008,
+          "sourceUrl": "https://www.blacksmith.sh/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-6vcpu",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 6,
+          "usdPerMinute": 0.08,
+          "sourceUrl": "https://www.blacksmith.sh/pricing",
+          "notes": "M4."
+        }
+      ]
+    },
+    {
+      "id": "depot",
+      "name": "Depot",
+      "website": "https://depot.dev",
+      "pricingUrl": "https://depot.dev/pricing",
+      "billing": {
+        "notes": "Plans: Developer $20/month with 2,000 minutes, Startup $200/month with 20,000 minutes. Included minutes are 2-vCPU Linux minutes; larger runners use a minutes multiplier. Prices here are the per-minute rates in the runner-types docs."
+      },
+      "runners": [
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-2vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "memoryGb": 8,
+          "usdPerMinute": 0.006,
+          "labels": [
+            "depot-ubuntu-24.04",
+            "depot-ubuntu-22.04"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-4vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "memoryGb": 16,
+          "usdPerMinute": 0.012,
+          "labels": [
+            "depot-ubuntu-24.04-4",
+            "depot-ubuntu-22.04-4"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-8vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 8,
+          "memoryGb": 32,
+          "usdPerMinute": 0.024,
+          "labels": [
+            "depot-ubuntu-24.04-8",
+            "depot-ubuntu-22.04-8"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-16vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 16,
+          "memoryGb": 64,
+          "usdPerMinute": 0.048,
+          "labels": [
+            "depot-ubuntu-24.04-16",
+            "depot-ubuntu-22.04-16"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-32vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 32,
+          "memoryGb": 128,
+          "usdPerMinute": 0.096,
+          "labels": [
+            "depot-ubuntu-24.04-32",
+            "depot-ubuntu-22.04-32"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-64vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 64,
+          "memoryGb": 256,
+          "usdPerMinute": 0.192,
+          "labels": [
+            "depot-ubuntu-24.04-64",
+            "depot-ubuntu-22.04-64"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-2vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 2,
+          "memoryGb": 8,
+          "usdPerMinute": 0.006,
+          "labels": [
+            "depot-ubuntu-24.04-arm",
+            "depot-ubuntu-22.04-arm"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-4vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 4,
+          "memoryGb": 16,
+          "usdPerMinute": 0.012,
+          "labels": [
+            "depot-ubuntu-24.04-arm-4",
+            "depot-ubuntu-22.04-arm-4"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-8vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 8,
+          "memoryGb": 32,
+          "usdPerMinute": 0.024,
+          "labels": [
+            "depot-ubuntu-24.04-arm-8",
+            "depot-ubuntu-22.04-arm-8"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-16vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 16,
+          "memoryGb": 64,
+          "usdPerMinute": 0.048,
+          "labels": [
+            "depot-ubuntu-24.04-arm-16",
+            "depot-ubuntu-22.04-arm-16"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-32vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 32,
+          "memoryGb": 128,
+          "usdPerMinute": 0.096,
+          "labels": [
+            "depot-ubuntu-24.04-arm-32",
+            "depot-ubuntu-22.04-arm-32"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-64vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 64,
+          "memoryGb": 256,
+          "usdPerMinute": 0.192,
+          "labels": [
+            "depot-ubuntu-24.04-arm-64",
+            "depot-ubuntu-22.04-arm-64"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-2vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 2,
+          "memoryGb": 8,
+          "usdPerMinute": 0.008,
+          "labels": [
+            "depot-windows-2025",
+            "depot-windows-2022"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-4vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 4,
+          "memoryGb": 16,
+          "usdPerMinute": 0.016,
+          "labels": [
+            "depot-windows-2025-4",
+            "depot-windows-2022-4"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-8vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 8,
+          "memoryGb": 32,
+          "usdPerMinute": 0.032,
+          "labels": [
+            "depot-windows-2025-8",
+            "depot-windows-2022-8"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-16vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 16,
+          "memoryGb": 64,
+          "usdPerMinute": 0.064,
+          "labels": [
+            "depot-windows-2025-16",
+            "depot-windows-2022-16"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-32vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 32,
+          "memoryGb": 128,
+          "usdPerMinute": 0.128,
+          "labels": [
+            "depot-windows-2025-32",
+            "depot-windows-2022-32"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-64vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 64,
+          "memoryGb": 256,
+          "usdPerMinute": 0.256,
+          "labels": [
+            "depot-windows-2025-64",
+            "depot-windows-2022-64"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-m4",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 9,
+          "memoryGb": 17,
+          "usdPerMinute": 0.08,
+          "labels": [
+            "depot-macos-26",
+            "depot-macos-latest"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types",
+          "notes": "M4."
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-m2",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 7,
+          "memoryGb": 17,
+          "usdPerMinute": 0.08,
+          "labels": [
+            "depot-macos-15"
+          ],
+          "sourceUrl": "https://depot.dev/docs/github-actions/runner-types",
+          "notes": "M2."
+        }
+      ]
+    },
+    {
+      "id": "namespace",
+      "name": "Namespace",
+      "website": "https://namespace.so",
+      "pricingUrl": "https://namespace.so/pricing",
+      "billing": {
+        "rounding": "Minimum 1 minute; the next 15 seconds round down.",
+        "notes": "Billed in unit minutes: max(vCPU, GB RAM / 2) x minutes x platform multiplier (Linux 1, Windows 2, macOS 10); macOS shapes use the published per-shape rates. usdPerMinute is the overage rate ($0.0015 per unit minute); usdPerMinutePrepaid is the effective in-plan rate ($0.001). Team $100/month includes 100,000 unit minutes; Business $250/month includes 250,000."
+      },
+      "runners": [
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-2x4",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "memoryGb": 4,
+          "usdPerMinute": 0.003,
+          "usdPerMinutePrepaid": 0.002,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-2x4",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 2,
+          "memoryGb": 4,
+          "usdPerMinute": 0.006,
+          "usdPerMinutePrepaid": 0.004,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-4x8",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "memoryGb": 8,
+          "usdPerMinute": 0.006,
+          "usdPerMinutePrepaid": 0.004,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-4x8",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 4,
+          "memoryGb": 8,
+          "usdPerMinute": 0.012,
+          "usdPerMinutePrepaid": 0.008,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-8x16",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 8,
+          "memoryGb": 16,
+          "usdPerMinute": 0.012,
+          "usdPerMinutePrepaid": 0.008,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-8x16",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 8,
+          "memoryGb": 16,
+          "usdPerMinute": 0.024,
+          "usdPerMinutePrepaid": 0.016,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-16x32",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 16,
+          "memoryGb": 32,
+          "usdPerMinute": 0.024,
+          "usdPerMinutePrepaid": 0.016,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-16x32",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 16,
+          "memoryGb": 32,
+          "usdPerMinute": 0.048,
+          "usdPerMinutePrepaid": 0.032,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-4x7",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 4,
+          "memoryGb": 7,
+          "usdPerMinute": 0.06,
+          "usdPerMinutePrepaid": 0.04,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-6x14",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 6,
+          "memoryGb": 14,
+          "usdPerMinute": 0.09,
+          "usdPerMinutePrepaid": 0.06,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-6x28",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 6,
+          "memoryGb": 28,
+          "usdPerMinute": 0.1125,
+          "usdPerMinutePrepaid": 0.075,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-8x14",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 8,
+          "memoryGb": 14,
+          "usdPerMinute": 0.12,
+          "usdPerMinutePrepaid": 0.08,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-12x28",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 12,
+          "memoryGb": 28,
+          "usdPerMinute": 0.18,
+          "usdPerMinutePrepaid": 0.12,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-12x56",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 12,
+          "memoryGb": 56,
+          "usdPerMinute": 0.27,
+          "usdPerMinutePrepaid": 0.18,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-16x28",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 16,
+          "memoryGb": 28,
+          "usdPerMinute": 0.24,
+          "usdPerMinutePrepaid": 0.16,
+          "sourceUrl": "https://namespace.so/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-16x56",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 16,
+          "memoryGb": 56,
+          "usdPerMinute": 0.3,
+          "usdPerMinutePrepaid": 0.2,
+          "sourceUrl": "https://namespace.so/pricing"
+        }
+      ]
+    },
+    {
+      "id": "buildjet",
+      "name": "BuildJet",
+      "website": "https://buildjet.com/for-github-actions",
+      "pricingUrl": "https://buildjet.com/for-github-actions/pricing",
+      "billing": {
+        "freeTier": "One-time $5 credit per account."
+      },
+      "runners": [
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-2vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "memoryGb": 8,
+          "usdPerMinute": 0.004,
+          "labels": [
+            "buildjet-2vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-4vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "memoryGb": 16,
+          "usdPerMinute": 0.008,
+          "labels": [
+            "buildjet-4vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-8vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 8,
+          "memoryGb": 32,
+          "usdPerMinute": 0.016,
+          "labels": [
+            "buildjet-8vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-16vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 16,
+          "memoryGb": 64,
+          "usdPerMinute": 0.032,
+          "labels": [
+            "buildjet-16vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-32vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 32,
+          "memoryGb": 64,
+          "usdPerMinute": 0.048,
+          "labels": [
+            "buildjet-32vcpu-ubuntu-2204"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-2vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 2,
+          "memoryGb": 3,
+          "usdPerMinute": 0.004,
+          "labels": [
+            "buildjet-2vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-4vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 4,
+          "memoryGb": 6,
+          "usdPerMinute": 0.008,
+          "labels": [
+            "buildjet-4vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-8vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 8,
+          "memoryGb": 12,
+          "usdPerMinute": 0.016,
+          "labels": [
+            "buildjet-8vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-16vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 16,
+          "memoryGb": 24,
+          "usdPerMinute": 0.032,
+          "labels": [
+            "buildjet-16vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-32vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 32,
+          "memoryGb": 48,
+          "usdPerMinute": 0.064,
+          "labels": [
+            "buildjet-32vcpu-ubuntu-2204-arm"
+          ],
+          "sourceUrl": "https://buildjet.com/for-github-actions/pricing"
+        }
+      ]
+    },
+    {
+      "id": "ubicloud",
+      "name": "Ubicloud",
+      "website": "https://www.ubicloud.com/use-cases/github-actions",
+      "pricingUrl": "https://ubicloud.com/docs/about/pricing",
+      "billing": {
+        "freeTier": "$2.50 credit per month (1,250 minutes of 2-vCPU runner time).",
+        "notes": "New accounts get premium runners by default; they can be turned off in account settings."
+      },
+      "runners": [
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-2vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "memoryGb": 8,
+          "usdPerMinute": 0.00125,
+          "labels": [
+            "ubicloud-standard-2"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-4vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "memoryGb": 16,
+          "usdPerMinute": 0.0025,
+          "labels": [
+            "ubicloud-standard-4"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-8vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 8,
+          "memoryGb": 32,
+          "usdPerMinute": 0.005,
+          "labels": [
+            "ubicloud-standard-8"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-16vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 16,
+          "memoryGb": 64,
+          "usdPerMinute": 0.01,
+          "labels": [
+            "ubicloud-standard-16"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-30vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 30,
+          "memoryGb": 120,
+          "usdPerMinute": 0.01875,
+          "labels": [
+            "ubicloud-standard-30"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-2vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 2,
+          "memoryGb": 6,
+          "usdPerMinute": 0.00125,
+          "labels": [
+            "ubicloud-standard-2-arm"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-4vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 4,
+          "memoryGb": 12,
+          "usdPerMinute": 0.0025,
+          "labels": [
+            "ubicloud-standard-4-arm"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-8vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 8,
+          "memoryGb": 24,
+          "usdPerMinute": 0.005,
+          "labels": [
+            "ubicloud-standard-8-arm"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-16vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 16,
+          "memoryGb": 48,
+          "usdPerMinute": 0.01,
+          "labels": [
+            "ubicloud-standard-16-arm"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-arm64-30vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 30,
+          "memoryGb": 90,
+          "usdPerMinute": 0.01875,
+          "labels": [
+            "ubicloud-standard-30-arm"
+          ],
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-2vcpu-premium",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "memoryGb": 8,
+          "usdPerMinute": 0.002,
+          "tier": "premium",
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-4vcpu-premium",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "memoryGb": 16,
+          "usdPerMinute": 0.004,
+          "tier": "premium",
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-8vcpu-premium",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 8,
+          "memoryGb": 32,
+          "usdPerMinute": 0.008,
+          "tier": "premium",
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-16vcpu-premium",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 16,
+          "memoryGb": 64,
+          "usdPerMinute": 0.016,
+          "tier": "premium",
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "ubuntu-x64-30vcpu-premium",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 30,
+          "memoryGb": 120,
+          "usdPerMinute": 0.03,
+          "tier": "premium",
+          "sourceUrl": "https://ubicloud.com/docs/about/pricing"
+        }
+      ]
+    },
+    {
+      "id": "runs-on",
+      "name": "RunsOn",
+      "website": "https://runs-on.com",
+      "pricingUrl": "https://runs-on.com/pricing/",
+      "billing": {
+        "model": "self-hosted-in-your-cloud",
+        "notes": "Runs in your own AWS account: you pay AWS for compute plus an annual license (Starter $350/yr under 50k jobs/month, Growth $1,050, Scale $2,100, Sponsorship $4,200; free for non-commercial use). Per-minute prices are RunsOn's published us-east-1 spot examples (7-day average, cheapest zone, including 30 GB gp3) and vary with AWS prices."
+      },
+      "runners": [
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-1cpu-spot",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 1,
+          "usdPerMinute": 0.0006,
+          "estimate": true,
+          "instanceType": "t8i.medium",
+          "sourceUrl": "https://runs-on.com/pricing/"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-2cpu-spot",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "usdPerMinute": 0.0007,
+          "estimate": true,
+          "instanceType": "m8a.large",
+          "sourceUrl": "https://runs-on.com/pricing/"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-4cpu-spot",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "usdPerMinute": 0.0012,
+          "estimate": true,
+          "instanceType": "m8a.xlarge",
+          "sourceUrl": "https://runs-on.com/pricing/"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-8cpu-spot",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 8,
+          "usdPerMinute": 0.0022,
+          "estimate": true,
+          "instanceType": "c8id.2xlarge",
+          "sourceUrl": "https://runs-on.com/pricing/"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-16cpu-spot",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 16,
+          "usdPerMinute": 0.0034,
+          "estimate": true,
+          "instanceType": "c8id.4xlarge",
+          "sourceUrl": "https://runs-on.com/pricing/"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-32cpu-spot",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 32,
+          "usdPerMinute": 0.006,
+          "estimate": true,
+          "instanceType": "c8id.8xlarge",
+          "sourceUrl": "https://runs-on.com/pricing/"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-48cpu-spot",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 48,
+          "usdPerMinute": 0.0103,
+          "estimate": true,
+          "instanceType": "c8a.12xlarge",
+          "sourceUrl": "https://runs-on.com/pricing/"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-64cpu-spot",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 64,
+          "usdPerMinute": 0.0111,
+          "estimate": true,
+          "instanceType": "c8i-flex.16xlarge",
+          "sourceUrl": "https://runs-on.com/pricing/"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-96cpu-spot",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 96,
+          "usdPerMinute": 0.0179,
+          "estimate": true,
+          "instanceType": "c8id.24xlarge",
+          "sourceUrl": "https://runs-on.com/pricing/"
+        }
+      ]
+    },
+    {
+      "id": "warpbuild",
+      "name": "WarpBuild",
+      "website": "https://www.warpbuild.com",
+      "pricingUrl": "https://www.warpbuild.com/pricing",
+      "billing": {
+        "notes": "Cloud runners billed per minute. Bring-your-own-cloud runners cost $0.002/min plus your cloud bill."
+      },
+      "runners": [
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-2vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 2,
+          "memoryGb": 8,
+          "usdPerMinute": 0.004,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-4vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 4,
+          "memoryGb": 16,
+          "usdPerMinute": 0.008,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-8vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 8,
+          "memoryGb": 32,
+          "usdPerMinute": 0.016,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-16vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 16,
+          "memoryGb": 64,
+          "usdPerMinute": 0.032,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-x64-32vcpu",
+          "os": "linux",
+          "arch": "x64",
+          "vcpu": 32,
+          "memoryGb": 128,
+          "usdPerMinute": 0.064,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-arm64-2vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 2,
+          "memoryGb": 8,
+          "usdPerMinute": 0.003,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-arm64-4vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 4,
+          "memoryGb": 16,
+          "usdPerMinute": 0.006,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-arm64-8vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 8,
+          "memoryGb": 32,
+          "usdPerMinute": 0.012,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-arm64-16vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 16,
+          "memoryGb": 64,
+          "usdPerMinute": 0.024,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "linux-arm64-32vcpu",
+          "os": "linux",
+          "arch": "arm64",
+          "vcpu": 32,
+          "memoryGb": 128,
+          "usdPerMinute": 0.048,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-6vcpu",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 6,
+          "memoryGb": 14,
+          "usdPerMinute": 0.08,
+          "sourceUrl": "https://www.warpbuild.com/pricing",
+          "notes": "M4/M5 Pro."
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "macos-arm64-12vcpu",
+          "os": "macos",
+          "arch": "arm64",
+          "vcpu": 12,
+          "memoryGb": 28,
+          "usdPerMinute": 0.16,
+          "sourceUrl": "https://www.warpbuild.com/pricing",
+          "notes": "M4/M5 Pro."
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-4vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 4,
+          "memoryGb": 16,
+          "usdPerMinute": 0.016,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-8vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 8,
+          "memoryGb": 32,
+          "usdPerMinute": 0.032,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-16vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 16,
+          "memoryGb": 64,
+          "usdPerMinute": 0.064,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "windows-x64-32vcpu",
+          "os": "windows",
+          "arch": "x64",
+          "vcpu": 32,
+          "memoryGb": 128,
+          "usdPerMinute": 0.128,
+          "sourceUrl": "https://www.warpbuild.com/pricing"
+        },
+        {
+          "lastChecked": "2026-11-27",
+          "id": "byoc-linux",
+          "os": "linux",
+          "arch": "x64",
+          "usdPerMinute": 0.002,
+          "tier": "byoc",
+          "sourceUrl": "https://www.warpbuild.com/pricing",
+          "notes": "Bring your own cloud: WarpBuild fee only, plus your cloud compute bill."
+        }
+      ]
+    }
+  ]
+}

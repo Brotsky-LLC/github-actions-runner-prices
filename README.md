@@ -1,7 +1,10 @@
 # GitHub Actions runner prices
 
-> Built for [PRLane](https://prlane.com), which uses this data to show what
-> every pull request costs in CI.
+<p>
+  <a href="https://www.prlane.com/"><img src="https://www.prlane.com/brand/prlane/prlane-symbol-dark.png" width="24" alt=""> Proudly built for PRLane</a>
+  ·
+  <a href="https://www.brotskydesigns.com/"><img src="https://www.brotskydesigns.com/apple-touch-icon.png" width="24" height="24" alt=""> By Brotsky Designs</a>
+</p>
 
 Current per-minute list prices for GitHub Actions runners from GitHub and the
 main third-party runner providers, as one JSON file. Every price carries the

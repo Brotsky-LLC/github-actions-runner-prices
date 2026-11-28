@@ -1,6 +1,6 @@
 {
   "name": "@brotskyllc/github-actions-runner-prices",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Current per-minute prices for GitHub Actions runners from GitHub, Blacksmith, Depot, Namespace, BuildJet, Ubicloud, RunsOn, WarpBuild and more, each with a source URL and last-checked date. Built for PRLane.com.",
   "license": "MIT",
   "author": "Brotsky, LLC",

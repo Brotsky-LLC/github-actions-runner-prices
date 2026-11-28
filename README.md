@@ -3,7 +3,7 @@
 <p>
   <a href="https://www.prlane.com/"><img src="https://www.prlane.com/brand/prlane/prlane-symbol-dark.png" width="24" alt=""> Proudly built for PRLane</a>
   ·
-  <a href="https://www.brotskydesigns.com/"><img src="https://www.brotskydesigns.com/apple-touch-icon.png" width="24" height="24" alt=""> By Brotsky Designs</a>
+  <a href="https://www.brotskydesigns.com/"><img src="https://www.brotskydesigns.com/apple-touch-icon.png" width="24" height="24" alt=""> By Brotsky</a>, LLC
 </p>
 
 Current per-minute list prices for GitHub Actions runners from GitHub and the
